@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BigLion" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/main_color</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+    
+    
+    
+    <style name="CustomCardViewStyleBottom" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/card_custom_corners_bottom</item>
+    </style>
+
+
+    <style name="TopCornerCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="Theme.BigLion">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/spacing_large</item>
+        <item name="cornerSizeTopLeft">@dimen/spacing_large</item>
+    </style>
+
+    <style name="card_custom_corners_bottom" parent="Theme.BigLion">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">@dimen/spacing_large</item>
+        <item name="cornerSizeBottomLeft">@dimen/spacing_large</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_top_corners" parent="Theme.BigLion">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/spacing_normal</item>
+    </style>
+
+
+
+
+    <style name="MyShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerSize">@dimen/spacing_tiny</item>
+    </style>
+
+
+    <style name="image_corner" parent="Theme.BigLion">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerSize">@dimen/_20sdp</item>
+    </style>
+
+
+
+    <style name="carDetailsMainStyle" parent="Theme.BigLion">
+
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+        <item name="drawableTint">@color/main_color</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal</item>
+        <item name="android:textColor">@color/main_color</item>
+
+
+    </style>
+
+
+    <style name="carDetailsSubStyle" parent="Theme.BigLion">
+
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_tiny</item>
+        <item name="android:layout_marginStart">@dimen/spacing_normal</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:alpha">.5</item>
+
+    </style>
+
+
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
+    
+    
+</resources>

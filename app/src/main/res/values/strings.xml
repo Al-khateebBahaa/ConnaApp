@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConnaApp</string>
+    <string name="ops_error">Ops, something went wrong, try again please</string>
+    <string name="timeout_error">Ops, request time out, please try again</string>
+    <string name="empty_field">Empty field</string>
+    <string name="go_live">Go Live</string>
+
+</resources>
